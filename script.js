@@ -19,7 +19,7 @@ require([
 
 
     const template = { //Add Popup template
-        title: "Objekto informacija",
+        title: "Atminimo Lentos/Objekto informacija",
         content: [{
             type: "fields",
             fieldInfos: [{
@@ -40,9 +40,6 @@ require([
         url: "https://services1.arcgis.com/usA3lHW20rGU6glp/ArcGIS/rest/services/Viln_lent_pam_2020_gdb/FeatureServer/0", // array of graphics objects
         outFields: ["*"],
         popupTemplate: template,
-        customParameters: {
-            "key": "AAPKa50cbd71ab6745b2ba76974ebe4d852bPB_Dz8hi2xiW89S90EDHOiL4qtaYbp1QRYLHndBziE9YwxH29D2a1kl9tFcOe1ly"
-        }
     });
 
     map.add(layer);
